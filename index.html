@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jscolor.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div>
+      <div class="container-fluid main">
+        <div class="row">
+          <div class="container-fluid top">
+            <h1 class="LPAM">Lab: Pixel Art Maker</h1>
+          </div>
+        </div>
+          <div class="row display-flex">
+            <div class="container medium col-lg-3 col-sm-3 col-xs-6 top1">
+              <h2>Pick A Color</h2>
+              <div class="colorPaletteWhite">
+              <img class="colorPalette" id="ff0000" src="ff0000.png" height="20" width="20">
+              <img class="colorPalette" id="000000" src="000000.png" height="20" width="20">
+              <img class="colorPalette" id="3399ff" src="3399ff.png" height="20" width="20">
+              </div>
+              <div class="colorPaletteWhite">
+              <img class="colorPalette" id="8b0000" src="8b0000.png" height="20" width="20">
+              <img class="colorPalette" id="ffc0cb" src="ffc0cb.png" height="20" width="20">
+              <img class="colorPalette" id="008000" src="008000.png" height="20" width="20">
+              </div>
+              <div class="colorPaletteWhite">
+              <img class="colorPalette" id="cccccc" src="cccccc.png" height="20" width="20">
+              <img class="colorPalette" id="ffa500" src="ffa500.png" height="20" width="20">
+              <img class="colorPalette" id="8a2be2" src="8a2be2.png" height="20" width="20">
+              </div>
+              <div>
+              <div id="trash" class="glyphicon glyphicon-trash colorPaletteGlyphicon"></div>
+              <div id="rubber" class="glyphicon glyphicon-erase colorPaletteGlyphicon" ></div>
+              <div id="grid" class="glyphicon glyphicon-th colorPaletteGlyphicon"></div>
+              </div>
+              <input class="jscolor {width:160, height:100, hash:true}" value="002567">
+            </div>
+            <div class="container-fluid medium col-sm-6 col-xs-12">
+              <h2>Choose Grid Size</h2>
+              <form id="sizePicker">
+                <p class="glyphicon glyphicon-resize-vertical"></p>
+                <input type="number" id="input_height" name="height" min="1" value="12" max="21">
+                <p class="glyphicon glyphicon-resize-horizontal"></p>
+                <input type="number" id="input_width" name="width" min="1" value="12" max="38">
+                <input id="button" type="submit" value="submit" class="btn-success-own">
+              </form>
+
+              <h2>Design Canvas</h2>
+              <table class="tableColor" id="pixel_canvas"></table>
+
+            </div>
+            <div class="container-fluid medium col-sm-3 col-xs-6">
+              <h2>Preview<h2>
+              <table class="tableColor" id="pixel_canvas_preview"></table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container-fluid bottom">
+              <footer class="fontBottom ftext-center">
+              <p>designed by Marcin Mokrzan  <span class="glyphicon glyphicon-globe"></span> <span class="glyphicon glyphicon-education">
+              <a href="https://github.com/mormar/Pixel-Art-Maker">
+              <img src="github1.png" height="15" width="15">
+              </p></p>
+              </footer>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="designs.js"></script>
+</body>
+</html>
